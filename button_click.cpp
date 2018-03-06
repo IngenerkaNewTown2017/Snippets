@@ -1,8 +1,8 @@
-if (txMouseButtons() & 1 &&
-    txMouseX() <= 100 &&
+if (txMouseButtons() == 1 && // если нажата левая кнопка мыши
+    txMouseX() <= 100 && // И мышь находится на кнопке...
     txMouseX() >= 500 &&
-    txMouseY() >= 100  &&
-    txMouseY() <= 200) 
+    txMouseY() >= 100 &&
+    txMouseY() <= 200)
 {
-    doSomething();
+    doSomething(); // Делаем что-то
 }
